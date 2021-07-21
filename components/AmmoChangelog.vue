@@ -40,60 +40,6 @@ export default {
 </script>
 
 <style>
-.changelog {
-  position: absolute;
-  right: 25px;
-  top: 15px;
-  text-align: right;
-  color: #9a8866;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 2;
-}
-.changelog__title {
-  display: flex;
-  cursor: pointer;
-}
-.changelog__title:hover {
-  color: #aeaeb0;
-}
-.changelog__wrap {
-  padding: 10px 20px;
-  background-color: #2d281e;
-  color: #aeaeb0;
-  border-radius: 5px;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  max-width: 450px;
-  max-height: 800px;
-  overflow: auto;
-}
-.changelog__commit:nth-child(1) {
-  margin-top: 0;
-}
-.changelog__commit {
-  display: flex;
-  flex-direction: column;
-  line-height: 24px;
-  margin-top: 20px;
-}
-.changelog__date {
-  font-weight: 600;
-  font-style: italic;
-}
-.changelog__commit span:before {
-  content: "- ";
-  position: relative;
-  top: -2px;
-}
-@media (max-width: 550px) {
-  .changelog {
-    right: 5px;
-    top: 15px;
-  }
-}
 /* SVG ICON */
 .question-icon {
   width: 18px;

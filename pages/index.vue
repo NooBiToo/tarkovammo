@@ -1,13 +1,13 @@
 <template>
   <main class="ammo">
-    <ammo-boosty />
+    <!-- <ammo-boosty /> -->
     <ammo-changelog :updates="updates.feed.entry" />
     <ammo-table :data="new_api.feed.entry" />
   </main>
 </template>
 <script>
 import AmmoTable from "~/components/AmmoTable.vue";
-import AmmoBoosty from "~/components/AmmoBoosty.vue";
+// import AmmoBoosty from "~/components/AmmoBoosty.vue";
 import AmmoChangelog from "~/components/AmmoChangelog.vue";
 
 
@@ -15,7 +15,7 @@ export default {
   name: 'Ammo',
   components: {
     AmmoTable,
-    AmmoBoosty,
+    // AmmoBoosty,
     AmmoChangelog,
   },
   async asyncData({ $axios }) {
